@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_activity_framelayout"
+    android:layout_width="match_parent"
+    tools:ignore="MissingPrefix"
+    android:layout_height="match_parent"
+    tools:context="sam.io.capstoneapp.Activities.MapActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <include layout="@layout/toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        mapbox:mapbox_cameraTargetLat="14.65"
+        mapbox:mapbox_cameraTargetLng="121.1"
+        mapbox:mapbox_cameraTilt="27"
+        mapbox:mapbox_cameraZoom="14"
+        mapbox:mapbox_cameraZoomMin="10"
+        mapbox:mapbox_uiAttribution="false">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/directionbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="150dp"
+            mapbox:maxImageSize="35dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/accent"
+            android:backgroundTintMode="add"
+            android:src="@drawable/direction_iconstyle"
+            mapbox:backgroundTint="#32FFFFFF"
+            mapbox:tint="#DDEBEB"
+            />
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

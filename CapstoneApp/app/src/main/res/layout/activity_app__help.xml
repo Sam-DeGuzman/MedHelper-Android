@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.App_Help">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/Home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/Bottom_App_Bar_Help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            app:backgroundTint="@color/appbarBackground"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="1dp"
+            app:hideOnScroll="true"
+            app:menu="@menu/app_bar_menu"
+            app:navigationIcon="@drawable/home_iconstyle" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabhelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:src="@drawable/gps_iconstyle"
+            app:layout_anchor="@+id/Bottom_App_Bar_Help"
+            app:layout_anchorGravity="center"
+            app:maxImageSize="44dp"
+            app:tint="#DDEBEB" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="@color/accent"
+                android:padding="10dp"
+                android:text="Using The Bottom App Bar"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/accent"
+                android:padding="10dp"
+                android:text="Using Call Directory List"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/accent"
+                android:padding="10dp"
+                android:text="Using Map List"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/accent"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:text="What can you search?"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

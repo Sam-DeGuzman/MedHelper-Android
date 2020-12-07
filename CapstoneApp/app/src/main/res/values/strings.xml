@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MedHelper</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="call">Call</string>
+    <string name="home">Home</string>
+    <string name="gotoGPS">Go to next activity</string>
+    <string name="search">Search</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="nogps">No Location found.</string>
+    <string name="nogps2">Please Enable GPS mode</string>
+    <string name="nogps3">and Try Again.</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos incidunt laboriosam nostrum nulla officiis possimus sunt. Cumque ducimus eum excepturi laboriosam non perferendis perspiciatis! Ab deleniti molestiae praesentium quod!</string>
+    <string name="nointernet">Can\'t load Directory, Please Check your Internet Connection and Try Again</string>
+
+    //Mapbox
+    <string name="access_token" translatable="false">pk.eyJ1Ijoic2FtZGcwMTkiLCJhIjoiY2s3dXBjaTZiMDZ3NjNpbW9heTNvdHZvMSJ9.tC1L4a2yFS7V_mxgSnj7Vg</string>
+    <string name="purple_map_style" translatable="false">mapbox://styles/mapbox/cj7bww7is2f4i2rnwyxkzpwu7</string>
+    <string name="blue_map_style" translatable="false">mapbox://styles/mapbox/cj7bwwv3caf7l2spgukxm8bwv</string>
+    <string name="terminal_map_style" translatable="false">mapbox://styles/mapbox/cj62n87yx3mvi2rp93sfp2w9z</string>
+    <string name="map_view">Map view</string>
+    <string name="failure_to_load_file">Failure to load the local file of locations. Please try reloading the app.</string>
+    <string name="mock_location_title">Fake device location</string>
+    <string name="select_a_theme">Tap on a theme</string>
+    <string name="no_internet_message">Route drawing not possible because there\'s no internet connection!</string>
+    <string name="failure_to_retrieve">Failure to retrieve the navigation route!</string>
+
+    <!-- Single card -->
+    <string name="hours">Hours</string>
+    <string name="phone">Phone</string>
+    <string name="distance">mi</string>
+
+
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="aboutus">About Us</string>
+    <string name="team">Our Team</string>
+    <string name="samuel">Samuel Mark De Guzman</string>
+    <string name="prog">Programmer</string>
+    <string name="nesh">Neslie Argote</string>
+    <string name="PM">Project Manager</string>
+    <string name="Roland">Roland Valenzuela</string>
+    <string name="TW">Technical Writer</string>
+    <string name="Mark">Mark Castillo</string>
+    <string name="UI">UI Designer</string>
+    <string name="FirstAidTitle">Emergency First Aid</string>
+
+    //First aid instructions : Heart Attack
+
+    <string name="heartattack1">Never overlook a person suffering from chest pain.</string>
+    <string name="heartattack2">Make the person sit in a slightly reclined angle.</string>
+    <string name="heartattack3">Let the person take a rest and try to keep him or her calm.</string>
+    <string name="heartattack4">Loosen his or her tighten clothes.</string>
+    <string name="heartattack5">Ask the person whether he or she takes any chest pain medicines like nitroglycerin, for recognized heart condition, and assist them in taking it.</string>
+    <string name="heartattack6">If a person still experiences pain within 3 minutes of taking nitroglycerin, call for emergency medical assistance.</string>
+    <string name="heartattack7">In the case of infant or child is unresponsive and unconscious condition, perform 1 minute of CPR, then call 161.</string>
+    <string name="heartattack8">A person suffering from a heart attack should receive medical care within one hour.</string>
+    <string name="heartattackuc1">If a person is in an unconscious condition and unresponsive, call 161 (or your local emergency number), then start CPR. Push hard and fast on the center of the victim\'s chest. 100 – 120 times per minute.</string>
+    <string name="heartattackuc2">Tilt the victims head back and lift the chin to open the airway.</string>
+    <string name="heartattackuc3">Give mouth to mouth rescue breaths.</string>
+
+    //First aid instructions : Stroke
+</resources>

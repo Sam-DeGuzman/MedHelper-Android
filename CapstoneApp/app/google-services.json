@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "272583728654",
+    "firebase_url": "https://medhelper-b4ebc.firebaseio.com",
+    "project_id": "medhelper-b4ebc",
+    "storage_bucket": "medhelper-b4ebc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272583728654:android:16ac93b0565e0579b2265f",
+        "android_client_info": {
+          "package_name": "sam.io.capstoneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272583728654-mana6ihktsi1tlg4gn2oipjt91ms2tcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEBf0u4z1Nlngamb9oj9ktk0iuqdURzrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272583728654-mana6ihktsi1tlg4gn2oipjt91ms2tcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

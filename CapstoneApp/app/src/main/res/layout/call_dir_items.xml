@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/action_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp">
+
+    <sam.io.capstoneapp.SwipeRevealLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        app:dragEdge="right">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <ImageButton
+                    android:id="@+id/call_button"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="5px"
+                    android:background="@drawable/ic_phone_green"
+                    android:text="Call" />
+
+                <ImageButton
+                    android:id="@+id/info"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="5px"
+                    android:background="@drawable/ic_info_blue"
+                    android:text="Info"/>
+                // second imagebutton goes here
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+
+                        <ImageView
+                            android:id="@+id/Item_Image"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="33dp" />
+
+                        <TextView
+                            android:id="@+id/line1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/Item_Image"
+                            android:text="Line 1"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/line2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="43dp"
+                            android:layout_toEndOf="@id/Item_Image"
+                            android:text="Line 2"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/type"
+                            android:layout_width="20dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_height="20dp"
+                            android:layout_marginEnd="-23dp"
+                            android:layout_toStartOf="@id/Item_Image"
+                            android:src="@drawable/e"
+                            android:padding="2dp" />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+    </sam.io.capstoneapp.SwipeRevealLayout>
+</RelativeLayout>

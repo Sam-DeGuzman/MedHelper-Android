@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.First_Aid_Instructions">
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPager"
+       android:foregroundGravity="center"
+       android:layout_centerInParent="true"
+       android:background="@color/primary"
+       android:overScrollMode="never"
+       android:clipToPadding="false"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </androidx.viewpager.widget.ViewPager>
+   <ImageButton
+       android:id="@+id/btnBack"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:background="@android:color/transparent"
+       android:layout_marginTop="10dp"
+       android:layout_marginStart="10dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentStart="true"
+       app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+   <TextView
+       android:id="@+id/aidtitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Emergency First Aid"
+       android:fontFamily="@font/roboto_black"
+       android:textSize="25sp"
+       android:textColor="@color/white"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="80dp"
+       />
+
+
+
+</RelativeLayout>

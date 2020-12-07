@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "sam.io.capstoneapp"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'  //App Compat
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3' //Constraint Layout
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //Material Design Dependency
+    implementation 'com.google.android.material:material:1.1.0' //Android Material
+    implementation "androidx.cardview:cardview:1.0.0"  //CardView
+    implementation "androidx.recyclerview:recyclerview:1.1.0" //RecyclerView
+    implementation "com.squareup.picasso:picasso:2.71828" // Picasso
+    implementation 'com.android.volley:volley:1.1.1' // Volley
+
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0' //Mapbox SDK
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-core:1.4.1' //Mapbox Android core
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.11.0' // Mapbox Location Layer
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6' // Mapbox Navigation UI
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'  // firebase analytics
+
+    //Direction Routes
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:4.8.0' // Mapbox Directions
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:5.0.0'
+
+    //3D Extrusions
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-building-v7:0.5.0'
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'

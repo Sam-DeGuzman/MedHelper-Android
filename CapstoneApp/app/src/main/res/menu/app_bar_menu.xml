@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/firstaid"
+        android:icon="@drawable/ic_local_hospital_white_30dp"
+        android:title="firstaid"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/call"
+        android:icon="@drawable/call_styleicon"
+        android:title="@string/call"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/bottomhelp"
+        android:title="Help" />
+    <item
+        android:id="@+id/bottomabout"
+        android:title="About" />
+
+
+</menu>

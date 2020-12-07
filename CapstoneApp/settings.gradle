@@ -1,0 +1,3 @@
+include ':swipe-reveal-layout'
+include ':app'
+rootProject.name='CapstoneApp'
